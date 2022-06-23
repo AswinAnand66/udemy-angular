@@ -12,6 +12,7 @@ export class ServersComponent implements OnInit {
   serverUpdation='No server is Created'
   toogle=false;
   newServerName:string;
+  serverCreated=false;
 
   constructor() {
     setTimeout(() => {
@@ -22,6 +23,7 @@ export class ServersComponent implements OnInit {
   ngOnInit(): void {
   }
   changeServer (){
+    this.serverCreated=!this.serverCreated;
     this.toogle=!this.toogle;
     if(this.toogle){
 
