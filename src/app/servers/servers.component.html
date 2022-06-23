@@ -1,0 +1,9 @@
+<h1>Hey, This is me new Server </h1>
+<p>{{'checking server'}} it works on port {{serverId}} and is {{getServerStatus()}}</p>
+<label for="">Server Name</label>
+<input type="text" (input)="getName($event)">
+<button [disabled]="!addServer" (click)="changeServer()" >{{toogle?"Remove Server":"Add Server"}}</button>
+<p>{{serverUpdation}}</p>
+<p [innerText]="addServer"></p>
+<p>servers works!</p>
+
