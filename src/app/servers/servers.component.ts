@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { FormsModule } from '@angular/forms';
 @Component({
   selector: 'app-servers',
   templateUrl: './servers.component.html',

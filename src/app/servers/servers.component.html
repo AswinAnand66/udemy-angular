@@ -2,6 +2,7 @@
 <p>{{'checking server'}} it works on port {{serverId}} and is {{getServerStatus()}}</p>
 <label for="">Server Name</label>
 <input type="text" (input)="getName($event)">
+<input type="text" [(ngModel)]="serverUpdation">
 <button [disabled]="!addServer" (click)="changeServer()" >{{toogle?"Remove Server":"Add Server"}}</button>
 <p>{{serverUpdation}}</p>
 <p [innerText]="addServer"></p>

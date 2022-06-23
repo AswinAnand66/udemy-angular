@@ -1,0 +1,12 @@
+<p>Welcome to my Assignments</p>
+
+<h3>Asssignment 2</h3>
+<p>Add a input field which updates a property username via two way-binding</p>
+<p>Output the username property via string interpolation </p>
+<p>Add a button which may only be clicked if the username is not an empty string</p>
+<p>upon clicking the button, the username should be reset to an empty string</p>
+
+<label for="">User Name</label>
+<input type="text"[(ngModel)]="userName" >
+<p>{{userName}}</p>
+<button class="btn btn-primary" [disabled]="userName ===''" (click)="onReset()">Reset User</button>
