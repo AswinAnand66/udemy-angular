@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AssignmentComponent implements OnInit {
   userName : string='';
+  showSecret : boolean =false;
+  logs=[];
 
   constructor() { }
 
@@ -15,5 +17,10 @@ export class AssignmentComponent implements OnInit {
   }
   onReset(){
     this.userName='';
+  }
+  callSecret(){
+    this.showSecret=!this.showSecret;
+    this.logs.push(this.logs.length+1);
+
   }
 }

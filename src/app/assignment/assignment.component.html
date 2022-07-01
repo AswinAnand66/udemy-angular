@@ -1,12 +1,32 @@
 <p>Welcome to my Assignments</p>
 
 <h3>Asssignment 2</h3>
-<p>Add a input field which updates a property username via two way-binding</p>
-<p>Output the username property via string interpolation </p>
-<p>Add a button which may only be clicked if the username is not an empty string</p>
-<p>upon clicking the button, the username should be reset to an empty string</p>
+<ol>
 
+    <li>Add a input field which updates a property username via two way-binding</li>
+    <li>Output the username property via string interpolation </li>
+    <li>Add a button which may only be clicked if the username is not an empty string</li>
+    <li>upon clicking the button, the username should be reset to an empty string</li>
+</ol>
+<br>
+<br>
 <label for="">User Name</label>
 <input type="text"[(ngModel)]="userName" >
 <p>{{userName}}</p>
 <button class="btn btn-primary" [disabled]="userName ===''" (click)="onReset()">Reset User</button>
+<hr>
+<hr>
+
+<h3>Assignment 3</h3>
+<ol>
+    <li>Add a button which says Display details</li>
+    <li>Add a paragraph with any content of your choice </li>
+    <li>Toogle the displaying of that paragraph with the button created in the first step</li>
+    <li>Log all button ckicks in an array and output that array below the secret paragraph </li>
+    <li>Starting at the 5th log item give all future log items a blue background and white color ngclass</li>
+</ol>
+<br>
+<br>
+<button class="btn btn-primary" (click)="callSecret()">{{showSecret?'Hide Secret':'Display Secret'}}</button>
+<p *ngIf="showSecret" >This is a secret message</p>
+<div *ngFor="let log of logs; let i= index" [ngStyle]="{color:log==5?'green':'blue'}" [ngClass]="{'change-background':i%2 == 0}">{{log}}{{i}}</div>

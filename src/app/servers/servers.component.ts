@@ -13,6 +13,7 @@ export class ServersComponent implements OnInit {
   toogle=false;
   newServerName:string;
   serverCreated=false;
+  servers=["server 1"];
 
   constructor() {
     setTimeout(() => {
@@ -23,6 +24,7 @@ export class ServersComponent implements OnInit {
   ngOnInit(): void {
   }
   changeServer (){
+    this.servers.push(this.newServerName);
     this.serverCreated=!this.serverCreated;
     this.toogle=!this.toogle;
     if(this.toogle){
@@ -38,6 +40,7 @@ export class ServersComponent implements OnInit {
   }
   getName(event:any){
      this.newServerName=event.target.value;
+    
 
   }
 }
