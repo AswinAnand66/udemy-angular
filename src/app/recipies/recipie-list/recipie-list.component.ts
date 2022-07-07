@@ -8,7 +8,8 @@ import { Recipe } from '../recipie.model';
 })
 export class RecipieListComponent implements OnInit {
   recipies: Recipe[] = [
-    new Recipe('A Test Recipe','This is simply a test','https://www.licious.in/blog/wp-content/uploads/2020/10/butter-chicken-.jpg')
+    new Recipe("A Test Recipe","This is simply a test","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGo9C2-wIEGp3KnCOF7D4P9P6C8x2Q5CSeGA&usqp=CAU"),
+    new Recipe("A Test Recipe","This is simply a test","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGo9C2-wIEGp3KnCOF7D4P9P6C8x2Q5CSeGA&usqp=CAU")
   ];
   constructor() { }
 
