@@ -14,6 +14,8 @@ import { RecipieDetailComponent } from './recipies/recipie-detail/recipie-detail
 import { RecipieItemComponent } from './recipies/recipie-list/recipie-item/recipie-item.component';
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
+import { CockpitComponent } from './cockpit/cockpit.component';
+import { ServerElementComponent } from './server-element/server-element.component';
 
 
 @NgModule({
@@ -31,6 +33,8 @@ import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-ed
     RecipieItemComponent,
     ShoppingListComponent,
     ShoppingEditComponent,
+    CockpitComponent,
+    ServerElementComponent,
   ],
   imports: [
     BrowserModule,
