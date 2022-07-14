@@ -6,12 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-first-app';
-  name="Aswin Anandh";
-  servers=[];
+  // title = 'my-first-app';
+  // name="Aswin Anandh";
+  // servers=[];
 
-  onAddServer(){
-    this.servers.push("Another Server");
-  }
- 
+  // onAddServer(){
+  //   this.servers.push("Another Server");
+  // }
+  serverElements=[{type:'server',name:'Testserver',content:'Just a test!'}];
 }

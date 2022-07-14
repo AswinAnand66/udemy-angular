@@ -10,7 +10,8 @@
 <h1>hey this is for Assignments</h1>
 <hr> 
 <app-assignment></app-assignment> -->
-<app-header></app-header>
+
+<!-- <app-header></app-header>
 <h1>Hey this is me again for maintaining streak</h1>
 <div class="container">
     <div class="row">
@@ -18,6 +19,18 @@
 
             <app-recipies></app-recipies>
             <app-shopping-list></app-shopping-list>
+        </div>
+    </div>
+</div> -->
+
+<!-- 65 Splitting Apps into Components -->
+
+<div class="container">
+    <app-cockpit></app-cockpit>
+    <hr>
+    <div class="row">
+        <div class="col-xs-12">
+          <app-server-element *ngFor="let serverElement of serverElements"></app-server-element>
         </div>
     </div>
 </div>
